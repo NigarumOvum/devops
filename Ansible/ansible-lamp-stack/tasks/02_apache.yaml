@@ -1,0 +1,20 @@
+---
+- name: Install and configure Apache with vhosts enabled
+  hosts: webservers
+  remote_user: root
+  vars_files:
+    - ../vars/apache.yaml
+  tasks:
+    - name: Create directory for adminer
+      file:
+        path: "{{ adminer_directory_path }}"
+        state: directory
+        recurse: yes
+    - name: Download Adminer
+      get_url:
+        url: https://www.adminer.org/latest.php
+        dest: "{{ adminer_directory_path }}/index.php"
+        mode: 0644
+        timeout: 60
+  roles:
+    - geerlingguy.apache

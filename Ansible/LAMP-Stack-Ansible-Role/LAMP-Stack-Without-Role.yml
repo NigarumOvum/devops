@@ -1,0 +1,128 @@
+- 
+ name: Deploy E-Commerce website using LAMP Stack
+ hosts: Target
+ vars:
+  mylocal: localhost
+  phpindex: index.php
+ become: yes
+ tasks:
+  - name: Install firewalld
+    yum: 
+     name: firewalld
+     state: present
+
+  - name: Start firewalld
+    service: 
+     name: firewalld
+     state: started
+
+  - name: Enable the Service
+    systemd:
+     name: firewalld
+     enabled: yes 
+
+  - name: Deploy and Configure Database
+    yum: 
+     name: mariadb-server
+     state: present
+    
+  - name: Start Database
+    service: 
+     name: mariadb
+     state: started
+
+  - name: Enable Database
+    systemd:
+     name: mariadb
+     enabled: yes
+  
+  - name: Configuring firewall for Database
+    firewalld:
+     port: 3306/tcp
+     zone: public
+     permanent: yes
+     immediate: yes
+     state: enabled
+  
+  - name: install epel
+    yum: 
+     name: epel-release
+     state: present
+ 
+  - name: install python-pip
+    yum: 
+     name: python-pip
+     state: present
+
+  - name: Make sure pymysql is present
+    pip:
+     name: pymysql
+     state: present
+
+  - name: Install mysql
+    yum:
+     name: MySQL-python
+     state: latest
+
+  - name: Create a new database with name "ecomdb"
+    mysql_db:
+     name: ecomdb
+     state: present
+  
+  - name: Create new user "ecomuser"
+    mysql_user:
+     host: localhost
+     name: ecomuser
+     password: ecompassword
+     priv: '*.*:ALL,GRANT'
+     state: present
+
+  - name: import ecom-table sql file
+    mysql_db:
+     state: import
+     name: ecomdb
+     target: /home/student1/ansilab/db-load-script.sql
+    ignore_errors: True
+
+  - name: Deploy and Configure web
+    yum:
+     name:
+      - httpd
+      - php
+      - php-mysql
+      - git
+     state: present
+
+  - name: Configuring firewall for Database
+    firewalld:
+     port: 80/tcp
+     zone: public
+     permanent: yes
+     immediate: yes
+     state: enabled
+
+  - name: Start httpd web server
+    service: 
+     name: httpd
+     state: started
+  
+  - name: Enable httpd
+    systemd:
+     name: httpd
+     enabled: yes
+
+  - name: cloning a git repo
+    git: 
+     repo: 'https://github.com/kodekloudhub/learning-app-ecommerce.git'
+     dest: /var/www/html/
+    ignore_errors: True
+
+  - name: Changing index.directory
+    template:
+     src: /home/student1/ansilab/httpd.conf.j2
+     dest: /etc/httpd/conf/httpd.conf
+
+  - name: Changing host in index.php
+    template:
+     src: /home/student1/ansilab/index.php.j2
+     dest: /var/www/html/index.php

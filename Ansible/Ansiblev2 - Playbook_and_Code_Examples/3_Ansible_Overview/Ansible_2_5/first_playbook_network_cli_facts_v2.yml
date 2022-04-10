@@ -1,0 +1,19 @@
+---
+- name: second network playbook with when and facts
+  connection: network_cli
+  gather_facts: true
+  hosts: all
+  tasks:
+    - name: Gather IOS Facts
+      ios_facts:
+      when: ansible_network_os == 'ios'
+
+    - name: Gather VyOS Facts
+      vyos_facts:
+      when: ansible_network_os == 'vyos'
+
+    - name: Display facts
+      debug:
+        msg: "The hostname is {{ ansible_net_hostname  }} and the os is {{ ansible_net_version }}"
+...
+

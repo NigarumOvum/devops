@@ -1,0 +1,7 @@
+---
+ansible_host: 172.16.1.100
+ansible_user: vyos
+ansible_ssh_pass: vyos
+ansible_connection: network_cli
+ansible_network_os: vyos
+

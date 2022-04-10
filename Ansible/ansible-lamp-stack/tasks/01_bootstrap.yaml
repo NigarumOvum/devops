@@ -1,0 +1,86 @@
+---
+- name: Bootstrap and install base tools
+  hosts: webservers
+  remote_user: root
+  vars_files:
+    - ../vars/bootstrap.yaml
+  tasks:
+  - name: Ping the node
+    ping:
+  - name: Set locale
+    locale_gen:
+      name: en_US.UTF-8
+      state: present
+  - name: Set timezone variables
+    copy: content='Europe/Prague'
+          dest=/etc/timezone
+          owner=root
+          group=root
+          mode=0644
+          backup=yes
+    notify:
+      - update timezone
+  - name: add backports repository
+    apt_repository: repo='deb http://ftp.cz.debian.org/debian stretch-backports main contrib non-free' state=present update_cache=yes
+  - name: Update repo cache
+    apt: update_cache=yes
+  - name: Install default tools
+    apt:
+      pkg:
+        - sudo
+        - vim
+        - htop
+        - iotop
+        - curl
+        - git
+        - tig
+      state: present
+      update_cache: yes
+  - name: Add default user
+    user:
+      name: "{{ default_user }}"
+      shell: /bin/bash
+  - name: Add default user to sudoers
+    lineinfile:
+      dest: /etc/sudoers
+      state: present
+      regexp: '^%{{ default_user }}'
+      line: '%{{ default_user }} ALL=(ALL) NOPASSWD: ALL'
+      validate: 'visudo -cf %s'
+  - name: Add SSH key to default user
+    authorized_key:
+      user: "{{ default_user }}"
+      key: "{{ lookup('file', lookup('env','HOME') + '/{{ default_user_key }}') }}"
+      state: present
+  - name: Copy SSH config
+    copy:
+      src: ssh_config
+      dest: /home/{{ default_user }}/.ssh/config
+      owner: "{{ default_user }}"
+      group: "{{ default_user }}"
+      mode: '0600'
+  - name: Copy bitbucket.org SSH key
+    copy:
+      src: ~/.ssh/id_mk_bitbucket
+      dest: /home/{{ default_user }}/.ssh/id_mk_bitbucket
+      owner: "{{ default_user }}"
+      group: "{{ default_user }}"
+      mode: '0600'
+  - name: Copy github.com SSH key
+    copy:
+      src: ~/.ssh/id_mk_github
+      dest: /home/{{ default_user }}/.ssh/id_mk_github
+      owner: "{{ default_user }}"
+      group: "{{ default_user }}"
+      mode: '0600'
+  - name: Copy script to (re)set vhost file permissions
+    copy:
+      src: set_vhost_file_permissions.sh
+      dest: /home/{{ default_user }}/set_vhost_file_permissions.sh
+      owner: "{{ default_user }}"
+      group: "{{ default_user }}"
+      mode: '0755'
+
+  handlers:
+  - name: update timezone
+    command: dpkg-reconfigure --frontend noninteractive tzdata

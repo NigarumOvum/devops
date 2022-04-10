@@ -1,0 +1,4 @@
+---
+ansible_host: 172.16.1.82
+ansible_user: cisco
+ansible_password: cisco

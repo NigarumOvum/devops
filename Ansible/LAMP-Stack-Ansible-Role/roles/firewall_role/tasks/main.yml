@@ -1,0 +1,23 @@
+---
+# tasks file for firewall_role
+  - name: Install firewalld
+    yum:
+     name: firewalld
+     state: present
+    notify: Start firewalld
+
+  - name: Configuring firewall for Database
+    firewalld:
+     port: 3306/tcp
+     zone: public
+     permanent: yes
+     immediate: yes
+     state: enabled
+
+  - name: Configuring firewall for Web Server
+    firewalld:
+     port: 80/tcp
+     zone: public
+     permanent: yes
+     immediate: yes
+     state: enabled

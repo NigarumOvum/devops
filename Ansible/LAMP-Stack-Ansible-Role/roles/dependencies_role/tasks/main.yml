@@ -1,0 +1,17 @@
+---
+# tasks file for dependencies_role
+  - name: install epel
+    yum:
+     name: 
+      - epel-release
+      - python-pip
+      - MySQL-python
+      - php
+      - php-mysql
+      - git
+     state: present
+
+  - name: Make sure pymysql is present
+    pip:
+     name: pymysql
+     state: present

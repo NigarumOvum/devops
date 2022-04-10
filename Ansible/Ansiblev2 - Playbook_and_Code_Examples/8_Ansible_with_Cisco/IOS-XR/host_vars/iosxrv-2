@@ -1,0 +1,9 @@
+---
+ansible_host: 172.16.1.89
+ansible_user: cisco
+ansible_ssh_pass: cisco
+ansible_connection: netconf
+ansible_network_os: iosxr
+ansbile_become: yes
+ansible_become_method: enable
+ansible_become_pass: cisco

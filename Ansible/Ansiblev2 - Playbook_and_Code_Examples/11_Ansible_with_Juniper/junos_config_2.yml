@@ -1,0 +1,26 @@
+---
+- name: Run JUNOS configuration tasks
+  connection: local
+  gather_facts: false
+  hosts: junos-r2
+  roles: 
+    - Juniper.junos
+
+  tasks:
+    - name: Change Hostname
+      juniper_junos_config:
+        host: "{{ ansible_ssh_host  }}"
+        user: "{{ ansible_ssh_user  }}"
+        passwd: "{{ ansible_ssh_password  }}"
+        config_mode: 'private'
+        load: 'merge'
+        lines:
+          - "set system host-name {{ inventory_hostname }}.woohoo"
+        
+      register: output
+
+    - name: print only the diff lines
+      debug:
+        var: output.diff_lines
+
+...

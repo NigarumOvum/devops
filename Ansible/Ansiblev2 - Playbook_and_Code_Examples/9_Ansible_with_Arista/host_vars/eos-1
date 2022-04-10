@@ -1,0 +1,4 @@
+ansible_host: 192.168.2.104
+ansible_username: arista
+ansible_password: arista
+ansible_enable: arista

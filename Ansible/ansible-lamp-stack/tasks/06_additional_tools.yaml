@@ -1,0 +1,49 @@
+---
+- name: Install additional tools
+  hosts: webservers
+  remote_user: root
+  vars_files:
+    - ../vars/additional_tools.yaml
+  tasks:
+  - name: ImageMagick 
+    apt:
+      pkg:
+        - imagemagick
+      state: present
+      update_cache: yes
+  - name: ZopfliPNG
+    get_url:
+      url: https://github.com/imagemin/zopflipng-bin/raw/master/vendor/linux/zopflipng
+      dest: "{{ additional_tools_binaries_folder }}/zopflipng"
+      mode: 0755
+      timeout: 60
+  - name: PngCrush
+    get_url:
+      url: https://github.com/imagemin/pngcrush-bin/raw/master/vendor/linux/pngcrush
+      dest: "{{ additional_tools_binaries_folder }}/pngcrush"
+      mode: 0755
+      timeout: 60
+  - name: JPEGOptim
+    get_url:
+      url: https://github.com/imagemin/jpegoptim-bin/raw/master/vendor/linux/jpegoptim
+      dest: "{{ additional_tools_binaries_folder }}/jpegoptim"
+      mode: 0755
+      timeout: 60
+  - name: PNGOut
+    get_url:
+      url: https://github.com/imagemin/pngout-bin/raw/master/vendor/linux/x64/pngout
+      dest: "{{ additional_tools_binaries_folder }}/pngout"
+      mode: 0755
+      timeout: 60
+  - name: AdvPNG
+    get_url:
+      url: https://github.com/imagemin/advpng-bin/raw/master/vendor/linux/advpng
+      dest: "{{ additional_tools_binaries_folder }}/advpng"
+      mode: 0755
+      timeout: 60
+  - name: MozJPEG
+    get_url:
+      url: https://github.com/imagemin/mozjpeg-bin/raw/master/vendor/linux/cjpeg
+      dest: "{{ additional_tools_binaries_folder }}/cjpeg"
+      mode: 0755
+      timeout: 60

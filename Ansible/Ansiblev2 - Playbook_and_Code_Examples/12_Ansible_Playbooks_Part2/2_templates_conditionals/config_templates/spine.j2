@@ -1,0 +1,16 @@
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname {{ item.hostname }}
+!
+boot-start-marker
+boot-end-marker
+!
+interface loopback 0
+  ip address {{ item.loopback }}
+!
+router bgp 65001
+

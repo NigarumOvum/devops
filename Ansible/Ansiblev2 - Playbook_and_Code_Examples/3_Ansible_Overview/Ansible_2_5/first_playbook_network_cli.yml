@@ -1,0 +1,20 @@
+---
+- name: First Network Playbook
+  connection: network_cli
+  gather_facts: true
+  hosts: all
+  tasks:
+    - name: show version
+      ios_command:
+        commands: show version
+
+      register: output
+
+    - name: show output
+      debug:
+        var: output.stdout
+
+    - name: copy output to file
+      copy: content="{{ output }}" dest=./output/{{ inventory_hostname }}.txt
+...
+

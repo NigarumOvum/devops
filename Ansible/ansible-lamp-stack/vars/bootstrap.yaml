@@ -1,0 +1,3 @@
+---
+default_user: martin
+default_user_key: .ssh/id_mk.pub

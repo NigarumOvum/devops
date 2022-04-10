@@ -1,0 +1,14 @@
+---
+- name: Change Loopback0 Description
+  connection: network_cli
+  gather_facts: false
+  hosts: iosv-1
+  tasks: 
+    - name: configure lo0
+      ios_config:
+        lines: 
+          description my awesome loopback 
+        parents: interface Loopback0
+      
+...
+

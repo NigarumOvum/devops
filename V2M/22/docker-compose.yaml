@@ -1,0 +1,22 @@
+version: '3'
+services:
+  netatalk:
+    image: dubodubonduponey/netatalk:v1
+    restart: unless-stopped
+    volumes:
+      - /mnt/backup/timemachine:/media/timemachine
+    environment:
+      - USERS=user
+      - PASSWORDS=123456
+      - NAME=rpi
+      - AVAHI_NAME=rpi
+    cap_add:
+      - NET_BIND_SERVICE
+      - CHOWN
+      - FOWNER
+      - SETUID
+      - SETGID
+      - DAC_OVERRIDE
+    cap_drop:
+      - ALL
+    network_mode: host

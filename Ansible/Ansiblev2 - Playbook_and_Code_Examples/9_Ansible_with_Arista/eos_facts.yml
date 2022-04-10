@@ -1,0 +1,16 @@
+---
+- name: EOS Facts
+  hosts: eos-1
+  connection: local
+  gather_facts: false
+  
+  tasks: 
+    - name: EOS facts
+      eos_facts: 
+        gather_subset: all
+        provider: '{{ eos_connection  }}'
+      register: output
+
+    - name: show output
+      debug:
+        var: output

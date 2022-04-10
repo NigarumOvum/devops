@@ -1,0 +1,10 @@
+[ios-devices]
+iosv-1
+iosv-2
+
+[iosxr-devices]
+iosxrv-1
+
+[nxos-devices]
+nxosv-1
+

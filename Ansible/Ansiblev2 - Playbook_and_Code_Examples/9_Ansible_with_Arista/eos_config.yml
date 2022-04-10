@@ -1,0 +1,21 @@
+---
+- name: EOS Config
+  hosts: eos-1
+  connection: local
+  gather_facts: false
+  
+  tasks: 
+    - name: configure access list via replace block
+      eos_config: 
+        lines: 
+          - 10 permit ip 1.1.1.1/32 any log
+          - 20 permit ip 2.2.2.2/32 any log
+        provider: '{{ eos_connection  }}'
+        parents: ip access-list test
+        before: no ip access-list test
+        replace: block
+      register: output
+
+    - name: show output
+      debug:
+        var: output
