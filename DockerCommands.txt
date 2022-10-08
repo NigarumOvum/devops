@@ -1,0 +1,61 @@
+
+#Build an image
+docker build -t {tagname}:v2 .
+
+#Push an image to docker
+docker images | head
+docker tag {ID} {username}/{tagname}:v2
+docker push {username}/{tagname}:v2
+ 
+#Crear maquinas:
+docker-machine create manager1
+docker-machine create worker1
+docker-machine create worker2
+
+#Iniciar swarm:
+docker swarm init --advertise-addr <IP>
+docker swarm join --token <token> <IP>:2377
+
+#Servicios:
+docker service create --replicas 1 --name helloworld alpine ping docker.com
+docker service create \
+  --replicas 3 \
+  --name redis \
+  --update-delay 10s \
+  redis:3.0.6
+docker service update --image redis:3.0.7 redis
+
+docker service create \
+  --name my-web \
+  --publish published=8080,target=80 \
+  --replicas 2 \
+  nginx 
+  
+
+    #docker save/load
+docker save {ID} > repository.tar
+
+    #processes running in container
+docker top {ID}
+
+    # server events
+docker events
+
+    # difference between deployed and now
+docker diff
+
+    # previous registry steps of the image
+docker history {ID}
+
+    # docker pause/unpause {ID}
+    # search containers available in docker
+docker search {container}
+
+    # 
+docker update --restart=unless-stopped {ID}
+
+    # wait 'till a container ends
+docker wait {ID}
+
+
+

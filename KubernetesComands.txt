@@ -1,0 +1,78 @@
+
+#completion zsh
+echo "if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi" >> ~/.zshrc
+
+#apply manifest 
+kubectl apply -f 
+
+#create a manifest from a container deployment
+kubectl create deploy nginx --image=nginx --dry-run=client -o yaml > nginx.yaml
+
+#Run container with changed resources declared
+kubectl run nginx --image=nginx --restart=Never --limits='cpu=300m,memory=512Mi' --dry-run=client o yaml > nginxNew.yaml
+
+#expose the container creating a service
+kubectl expose deployment nginx --type=ClusterIP --port=80
+
+#run image container shell ex: alpine
+kubectl run -it alpine --image=alpine -- sh
+
+#validate 
+kubectl create --dry-run=client --validate -f {filename}
+
+#nodes
+kubectl get nodes
+
+#namespaces
+kubectl get ns 
+
+#get pods in all namespaces
+kubectl  get pods -l run=nginx --all-namespaces
+#get detailed information
+kubectl get pods -o=wide 
+kubectl get pods -o=yaml
+kubectl get pods -o=json
+kubectl get pods -o=name
+kubectl get pods --sort-by=metadata.name
+kubectl get pods --sort-by=metadata.creationTimestamp
+
+#replica container information
+kubectl get deploy
+
+#Scale manually the container replicas
+kubectl scale deploy/{name} --replica=5
+
+#Service Account
+kubectl get sa -A 
+
+#Get manifest of a running pod to redeploy or modify
+kubectl -n {podname} get pod {podID} -o yaml --export
+
+#Important cluster state information (scheduler/controller manager/etcd)
+kubectl get componentstatuses
+
+#Rollback version of a container
+kubectl rollout history {containername}
+kubectl rollout undo {containername}
+#Rollback to old version
+kubectl rollout undo {containername} --to-revision=1
+
+
+#Node resource utilization
+kubectl top node 
+
+#Comando para crear el secreto:
+kubectl -n kube-system create secret generic digitalocean --from-literal=api-key=TU_API_KEY
+
+#Bring API available resources for this cluster
+kubectl api-resources 
+
+#Service Account IAM Mapping 
+kubectl describe sa {saname} -n 2048-game
+
+#SA & Cluster
+kubectl get clusterrole
+
+#ClusterRole Admin
+kubectl get clusterrole admin
+

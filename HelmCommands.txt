@@ -1,0 +1,21 @@
+#Search charts to install 
+Helm search 
+
+#Run & Follow instructions
+helm install {chartname} --generate-name
+
+kubectl get all
+
+#Load Balancer VPN for local minikube
+minikube tunnel
+
+#modify chart configuration
+helm inspect values {packagename} >> config.yaml
+vim config.yaml
+helm install -f {chartname} --generate-name
+
+#gh-pages
+helm create nigarumovum-test
+helm install --dry-run debug . 
+
+helm package 
