@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = blank-csharp
+build_property.ProjectDir = /Users/brealypadron/Downloads/Projects/devops/multicloud-integrations/AWS1/aws-lambda-developer-guide/sample-apps/blank-csharp/src/blank-csharp/

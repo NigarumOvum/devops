@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = ec2spot
+build_property.ProjectDir = /Users/brealypadron/Downloads/Projects/devops/multicloud-integrations/AWS1/aws-lambda-developer-guide/sample-apps/ec2-spot/src/ec2spot/
