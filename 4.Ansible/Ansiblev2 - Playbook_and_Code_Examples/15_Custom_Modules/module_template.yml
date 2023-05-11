@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  user: echou
+  connection: local
+
+  tasks:
+      - name: Testing the Module Template
+        action: moduleTemplate
+        register: output
+
+      - debug: msg="{{ output.msg }}"
+

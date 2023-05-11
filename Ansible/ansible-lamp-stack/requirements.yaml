@@ -1,8 +1,0 @@
----
-- src: geerlingguy.apache
-- src: geerlingguy.mysql
-- src: geerlingguy.php-versions
-- src: geerlingguy.php
-- src: geerlingguy.composer
-- src: geerlingguy.apache-php-fpm
-- src: geerlingguy.certbot

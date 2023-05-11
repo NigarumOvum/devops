@@ -1,0 +1,15 @@
+---
+- name: IOS-XR config
+  connection: network_cli
+  hosts: iosxrv-1
+  tasks: 
+    - name: Evaluate Output
+      iosxr_config: 
+        lines: hostname {{ inventory_hostname }} 
+      register: output
+
+    - name: Display Output
+      debug: 
+        var: output
+
+...

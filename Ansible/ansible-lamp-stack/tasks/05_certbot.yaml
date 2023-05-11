@@ -1,8 +1,0 @@
----
-- name: Install Certbot for Let's Encrypt certificates management
-  hosts: webservers
-  remote_user: root
-  vars_files:
-    - ../vars/certbot.yaml
-  roles:
-    - geerlingguy.certbot

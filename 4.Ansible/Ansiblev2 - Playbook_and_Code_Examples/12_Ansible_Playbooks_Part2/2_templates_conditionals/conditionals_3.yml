@@ -1,0 +1,22 @@
+---
+- name: show hostname
+  hosts: iosv-2
+  gather_facts: false
+  connection: local
+
+  tasks:
+    - name: show hostname
+      ios_command: 
+        commands: "show run | i hostname"
+            
+      register: output
+ 
+    - debug:
+        var: output
+
+    - name: pause with render
+      pause: 
+        prompt: "{{ lookup('template', 'conditional.j2') }}"         
+   
+
+ 

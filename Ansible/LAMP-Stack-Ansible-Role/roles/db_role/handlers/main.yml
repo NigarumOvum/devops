@@ -1,7 +1,0 @@
----
-# handlers file for db_role
-  - name: Start Database
-    service:
-     name: mariadb
-     state: started
-     enabled: yes

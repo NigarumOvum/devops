@@ -1,0 +1,14 @@
+---
+- name: configure ip access list
+  connection: network_cli
+  hosts: iosv-1
+  tasks: 
+    - name: configure ip access list
+      ios_config: 
+        lines: 
+          - 10 permit ip host 1.1.1.1 any log
+          - 20 permit ip host 2.2.2.2 any log
+        parents: ip access-list extended TEST
+        before: no ip access-list extended TEST
+        match: exact
+...

@@ -1,0 +1,22 @@
+---
+- name: VyOS Playbook with Vyos Role
+  connection: network_cli
+  hosts: "vyos-devices"
+  gather_facts: false
+  roles:
+    - vyos
+
+  tasks: 
+    - name: show version
+      ios_command: 
+        commands: show version
+      
+      register: output
+
+    - name: show output
+      debug:
+        var: output.stdout
+   
+    - name: copy output to file
+      copy: content="{{ output }}" dest=./output/{{ inventory_hostname }}.txt
+...

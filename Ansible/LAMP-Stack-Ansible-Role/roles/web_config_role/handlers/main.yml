@@ -1,7 +1,0 @@
----
-# handlers file for web_config_role
-  - name: Start httpd web server
-    service:
-     name: httpd
-     state: started
-     enabled: yes

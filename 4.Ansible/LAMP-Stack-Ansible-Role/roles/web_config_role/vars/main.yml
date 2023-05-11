@@ -1,0 +1,4 @@
+---
+# vars file for web_config_role
+mylocal: localhost
+phpindex: index.php

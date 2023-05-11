@@ -1,0 +1,18 @@
+---
+- name: VyOS Command with loop
+  connection: network_cli
+  gather_facts: False
+  hosts: vyos-1
+  tasks: 
+    - name: show interface
+      vyos_command: 
+        commands: 
+          - show interfaces ethernet {{ item  }} 
+      with_items: 
+          - eth0
+          - eth1
+      register: output
+
+    - name: show output
+      debug:
+        var: output

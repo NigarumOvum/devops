@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: landing-svc
+spec:
+  selector:
+    app: landing
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080

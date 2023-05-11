@@ -1,8 +1,0 @@
----
-# tasks file for db_role
-  - name: Deploy and Configure Database
-    yum:
-     name: mariadb-server
-     state: present
-    notify: Start Database
-

@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  user: echou
+  connection: local
+
+  tasks:
+      - name: Simple AXAPIv3 Module
+        action: axapiExample host="192.168.199.152" username="admin" password="a10"
+        register: output
+
+      - debug: msg="{{ output.msg }}"
+

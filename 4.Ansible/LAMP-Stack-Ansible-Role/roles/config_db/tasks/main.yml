@@ -1,0 +1,21 @@
+---
+# tasks file for config_db
+  - name: Create a new database with name "{{ db_name }}"
+    mysql_db:
+     name: "{{ db_name }}"
+     state: present
+
+  - name: Create new user "{{ db_user }}"
+    mysql_user:
+     host: localhost
+     name: "{{ db_user }}"
+     password: "{{ db_pass }}"
+     priv: '*.*:ALL,GRANT'
+     state: present
+
+  - name: import ecom-table sql file
+    mysql_db:
+     state: import
+     name: "{{ db_name }}"
+     target: /home/student1/ansilab/roles/config_db/files/db-load-script.sql
+    ignore_errors: True

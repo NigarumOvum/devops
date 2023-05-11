@@ -1,0 +1,20 @@
+ls -alh 
+df -h
+netstat -nr
+netstat -i
+netstat -natup
+tcpdump -i any -p tcp port 80
+top
+htop
+locate 
+updatedb
+screen
+tmux
+more
+tail
+head
+nmap
+free -m
+free -g
+cat /proc/cpuinfo
+cat /proc/loadavg

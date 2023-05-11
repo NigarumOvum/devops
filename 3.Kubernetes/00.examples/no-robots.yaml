@@ -1,0 +1,24 @@
+ind: ConfigMap
+metadata:
+  name: myapp-robots
+data:
+  robots.txt: |
+    User-agent: *
+    Disallow: /
+---
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: myapp
+spec:
+  volumes:
+    - name: myapp-robots
+      configMap:
+        name: myapp-robots
+  containers:
+    - name: myapp-container
+      image: myapp
+      volumeMounts:
+        - name: myapp-robots
+          mountPath: /path/to/robots.txt
+          subPath: robots.txt

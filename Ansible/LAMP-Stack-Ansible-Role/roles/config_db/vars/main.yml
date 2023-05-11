@@ -1,6 +1,0 @@
----
-# vars file for config_db
-db_name: ecomdb
-db_user: ecomuser
-db_pass: ecompassword
-

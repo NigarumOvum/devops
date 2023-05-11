@@ -1,0 +1,7 @@
+---
+- import_playbook: ./tasks/01_bootstrap.yaml
+- import_playbook: ./tasks/02_apache.yaml
+- import_playbook: ./tasks/03_mysql.yaml
+- import_playbook: ./tasks/04_php.yaml
+- import_playbook: ./tasks/05_certbot.yaml
+- import_playbook: ./tasks/06_additional_tools.yaml

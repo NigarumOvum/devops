@@ -1,5 +1,0 @@
-FROM alpine
-
-COPY . files/
-RUN tar -cf files.tar files
-RUN rm -rf files

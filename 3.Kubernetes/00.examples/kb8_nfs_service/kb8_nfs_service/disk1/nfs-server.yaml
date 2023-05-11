@@ -1,0 +1,55 @@
+# https://medium.com/platformer-blog/nfs-persistent-volumes-with-kubernetes-a-case-study-ce1ed6e2c266
+
+# En este paso se crea el PVC de DigitalOcean para crear el volumen
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  namespace: websites
+  name: nfs-disk1-do-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+  storageClassName: do-block-storage
+
+---
+
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  namespace: websites
+  name: nfs-disk1-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      role: nfs-disk1-server
+  template:
+    metadata:
+      labels:
+        role: nfs-disk1-server
+    spec:
+      containers:
+        - name: nfs-disk1-server
+          image: gcr.io/google_containers/volume-nfs:0.8
+          ports:
+            - name: nfs
+              containerPort: 2049
+            - name: mountd
+              containerPort: 20048
+            - name: rpcbind
+              containerPort: 111
+          securityContext:
+            privileged: true
+          volumeMounts:
+            - mountPath: /exports
+              name: nfs-pvc-disk1-server
+            - mountPath: /exports
+              name: nfs-pvc-disk1-server
+      volumes:
+        - name: nfs-pvc-disk1-server
+          persistentVolumeClaim:
+            claimName: nfs-disk1-do-pvc

@@ -1,0 +1,15 @@
+---
+- name: Collect IOS-XR Device Facts
+  hosts: iosxrv-2
+  tasks: 
+    - name: collect facts
+      iosxr_facts: 
+        gather_subset: all
+      
+      register: output
+
+    - name: show output
+      debug:
+        var: output
+   
+...

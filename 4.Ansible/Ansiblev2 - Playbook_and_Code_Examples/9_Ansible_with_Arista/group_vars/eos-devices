@@ -1,0 +1,11 @@
+---
+eos_connection:
+  host: "{{ ansible_host  }}"
+  username: "{{ ansible_username  }}"
+  password: "{{ ansible_password }}"
+  authorize: yes
+  auth_pass: "{{ ansible_enable }}"
+  transport: eapi
+  use_ssl: true
+  validate_certs: false
+  

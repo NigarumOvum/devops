@@ -1,0 +1,6 @@
+readinessProbe:
+  tcpSocket:
+    port: 8080
+readinessProbe:
+  tcpSocket:
+    port: 8080

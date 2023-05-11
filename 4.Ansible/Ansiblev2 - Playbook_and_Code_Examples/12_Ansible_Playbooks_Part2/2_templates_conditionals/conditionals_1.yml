@@ -1,0 +1,17 @@
+---
+- name: show hostname
+  hosts: "ios-devices"
+
+  tasks:
+    - name: show hostname
+      ios_command: 
+        commands: "show run | i hostname"
+            
+      register: output
+ 
+    - debug:
+        var: output
+      when: "'iosv-1' in output.stdout[0]"
+
+
+ 

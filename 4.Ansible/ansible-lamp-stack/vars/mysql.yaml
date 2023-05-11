@@ -1,0 +1,4 @@
+---
+mysql_user_home: /root
+mysql_root_password: root
+mysql_root_password_update: true

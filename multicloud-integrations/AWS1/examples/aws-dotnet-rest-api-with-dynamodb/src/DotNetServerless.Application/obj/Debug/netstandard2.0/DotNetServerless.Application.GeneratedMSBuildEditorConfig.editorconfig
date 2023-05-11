@@ -1,3 +1,0 @@
-is_global = true
-build_property.RootNamespace = DotNetServerless.Application
-build_property.ProjectDir = /Users/brealypadron/Downloads/Projects/devops/multicloud-integrations/AWS1/examples/aws-dotnet-rest-api-with-dynamodb/src/DotNetServerless.Application/

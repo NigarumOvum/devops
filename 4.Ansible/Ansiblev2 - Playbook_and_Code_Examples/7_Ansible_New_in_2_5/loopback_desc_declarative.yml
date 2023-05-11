@@ -1,0 +1,13 @@
+---
+- name: Change Loopback0 Description
+  connection: network_cli
+  gather_facts: false
+  hosts: iosv-1
+  tasks: 
+    - name: configure lo0
+      ios_interface:
+        name: Loopback0
+        enabled: False
+        description: my second description 
+...
+

@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: index-html
-data:
-  index.html: |-
-    Hola soy una configmap

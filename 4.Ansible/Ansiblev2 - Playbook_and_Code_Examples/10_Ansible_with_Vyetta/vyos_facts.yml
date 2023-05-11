@@ -1,0 +1,14 @@
+---
+- name: VyOS Facts
+  connection: network_cli
+  gather_facts: False
+  hosts: vyos-1
+  tasks: 
+    - name: VyOS facts
+      vyos_facts: 
+        gather_subset: all
+      register: output
+
+    - name: show output
+      debug:
+        var: output

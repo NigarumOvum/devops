@@ -1,0 +1,23 @@
+---
+# tasks file for web_config_role
+  - name: Deploy and Configure web
+    yum:
+     name: httpd
+     state: present
+    notify: Start httpd web server
+
+  - name: cloning a git repo
+    git:
+     repo: 'https://github.com/kodekloudhub/learning-app-ecommerce.git'
+     dest: /var/www/html/
+    ignore_errors: True
+
+  - name: Changing index directory
+    template:
+     src: roles/web_config_role/templates/httpd.conf.j2
+     dest: /etc/httpd/conf/httpd.conf
+
+  - name: Changing host in index.php
+    template:
+     src: roles/web_config_role/templates/index.php.j2
+     dest: /var/www/html/index.php
