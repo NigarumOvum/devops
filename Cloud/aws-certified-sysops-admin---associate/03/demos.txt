@@ -1,0 +1,30 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26\fsmilli13333 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Section 4, Monitoring, Logging, and Remediation, Section Introduction, Interactive Study Guide: Monitoring, Logging, and Remediation - Part 1, https://acloudguru.visme.co/view/8r0x8nzq-1058-studyguide-s04-monitoring-logging-and-remediation-part-1\
+\
+Section 4, Monitoring, Logging, and Remediation, Section Introduction, Interactive Study Guide: Monitorin, https://acloudguru.visme.co/view/y4nkzj8x-1058-studyguide-s04-monitoring-logging-and-remediation-part-2\
+\
+Section 4, Monitoring, Logging, and Remediation, Demo: Collecting Metrics and Logs Using the CloudWatch Agent, Bootstrap Script and commands, https://github.com/ACloudGuru-Resources/course-aws-sysops-administrator-associate/blob/main/CloudWatch_Agent_Demo/commands.txt\
+\
+Section 4, Monitoring, Logging, and Remediation, Demo: Creating CloudWatch Alarms, AWS Documentation: Creating a CPU usage alarm, https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/US_AlarmAtThresholdEC2.html\
+\
+Section 4, Monitoring, Logging, and Remediation, Introduction to CloudTrail, CloudTrail Supported Services and Integrations, https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.html\
+\
+Section 4, Monitoring, Logging, and Remediation, Demo: Configuring Automatic Remediation Using AWS Systems Manager and AWS Config, Script To Configure Role, https://github.com/ACloudGuru-Resources/course-aws-sysops-administrator-associate/tree/main/Automation_With_AWS_Config_Demo\
+\
+Section 4, Monitoring, Logging, and Remediation, Demo: Scheduling Automated Tasks Using EventBridge and AWS Config, How can I be notified when an AWS resource is non-compliant using AWS Config?, https://aws.amazon.com/premiumsupport/knowledge-center/config-resource-non-compliant/\
+\
+Section 4, Monitoring, Logging, and Remediation, Demo: Exploring Health Dashboards, AWS Service Health Dashboard, https://status.aws.amazon.com/\
+\
+Section 4, Monitoring, Logging, and Remediation, Section Review: Monitoring, Logging, and Remediation Summary - Part 1, Interactive Study Guide: Monitoring, Logging, and Remediation - Part 1, https://acloudguru.visme.co/view/8r0x8nzq-1058-studyguide-s04-monitoring-logging-and-remediation-part-1\
+\
+Section 4, Monitoring, Logging, and Remediation, Section Review: Monitoring, Logging, and Remediation Summary - Part 2, Interactive Study Guide: Monitoring, Logging, and Remediation - Part 2, https://acloudguru.visme.co/view/y4nkzj8x-1058-studyguide-s04-monitoring-logging-and-remediation-part-2\
+\
+}

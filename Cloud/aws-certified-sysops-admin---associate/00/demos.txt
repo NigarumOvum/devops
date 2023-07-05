@@ -1,0 +1,42 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26\fsmilli13333 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Section 1, Introduction, Introduction, Course Slides PDF Part 1 , https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1638832573255-PART%201_1058%20-%20Certified%20SysOps%20Administrator%20-%20Associate_compressed.pdf\
+\
+Section 1, Introduction, Introduction, Course Slides PDF Part 2, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1638832609125-PART%202_1058%20-%20Certified%20SysOps%20Administrator%20-%20Associate_compressed.pdf\
+\
+Section 1, Introduction, Introduction, Course Slides PDF Part 3, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1638832629762-PART%203_1058%20-%20Certified%20SysOps%20Administrator%20-%20Associate_compressed.pdf\
+\
+Section 1, Introduction, Introduction, Course Slides PDF Part 4, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1638832649263-PART%204_1058%20-%20Certified%20SysOps%20Administrator%20-%20Associate_compressed.pdf\
+\
+Section 1, Introduction, Introduction, Interactive Study Guide: Introduction, https://acloudguru.visme.co/view/z46zmrnx-1058-studyguide-s01-introduction\
+\
+Section 1, Introduction, Introduction, Interactive Study Guide.PDF, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1642526876255-Interactive%20Guide.pdf\
+\
+Section 1, Introduction, The Exam Guide, ACG SysOps Exam Walkthrough, https://youtu.be/Tm1wBx0paAs?t=469\
+\
+Section 1, Introduction, The Exam Guide, AWS SysOps Administrator Associate: SOA-C02 sample exam questions, tips, FAQs, https://acloudguru.com/blog/engineering/aws-sysops-administrator-associate-soa-c02-sample-exam-questions-tips-faqs\
+\
+Section 1, Introduction, The Exam Guide, Sample Questions, https://d1.awsstatic.com/training-and-certification/docs-sysops-associate/AWS-Certified-SysOps-Administrator-Associate_Sample-Questions_C02.pdf\
+\
+Section 1, Introduction, The Exam Guide, The Exam Guide, https://d1.awsstatic.com/training-and-certification/docs-sysops-associate/AWS-Certified-SysOps-Administrator-Associate_Exam-Guide.pdf\
+\
+Section 1, Introduction, The Exam Guide, What We Learned Taking the New SysOps Beta Exam, https://acloudguru.com/blog/engineering/what-we-learned-taking-the-new-aws-sysops-administrator-associate-beta-exam\
+\
+Section 1, Introduction, Introducing the AWS Cloud Sandbox, AWS Cloud Sandbox, https://help.acloud.guru/hc/en-us/articles/360001389256-AWS-Cloud-Sandbox\
+\
+Section 1, Introduction, Introducing the AWS Cloud Sandbox, Cloud Playground FAQ, https://help.acloud.guru/hc/en-us/articles/360001477955-Cloud-Playground-FAQ\
+\
+Section 1, Introduction, Introducing Hands-On Labs, Getting Started With Hands-On Labs, https://help.acloud.guru/hc/en-us/articles/360001382275-Hands-On-Labs-Getting-Started\
+\
+Section 1, Introduction, Introducing Hands-On Labs, Hands On Labs FAQ, https://help.acloud.guru/hc/en-us/articles/360001580275-Hands-On-Labs-Frequently-Asked-Questions\
+\
+Section 1, Introduction, Course Updates, Changelog, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1678721004787-1058_Changelog.pdf\
+\
+}

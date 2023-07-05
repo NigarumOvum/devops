@@ -1,0 +1,22 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26\fsmilli13333 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Section 2, Supporting Courses, Supporting Courses, AWS Certified Solutions Architect Associate (SAA-C03), https://learn.acloud.guru/course/certified-solutions-architect-associate/overview\
+\
+Section 2, Supporting Courses, Supporting Courses, Designing Resilient Architectures for Associate AWS Solutions Architects, https://acloud.guru/overview/2f2f600d-5ffe-4bd7-8406-fd04d29de611\
+\
+Section 2, Supporting Courses, Supporting Courses, High Availability and Scalability for Associate AWS Solutions Architects, https://acloud.guru/overview/59d0a824-d6b4-44aa-b37f-d8e32810b970\
+\
+Section 2, Supporting Courses, Supporting Courses, Logging and Security for Associate AWS Solutions Architects, https://acloud.guru/overview/af59ec1e-7cbf-4e2f-b13a-06ace26f9f0f\
+\
+Section 2, Supporting Courses, Supporting Courses, Networking and Compute for Associate AWS Solutions Architects, https://acloud.guru/overview/1ea506a0-9e59-461f-840b-d9ba1ce98d8d\
+\
+Section 2, Supporting Courses, Supporting Courses, Storage, Databases, and Migration for Associate AWS Solutions Architects, https://acloud.guru/overview/cab21320-af77-4089-905b-cd91842b2998\
+\
+}

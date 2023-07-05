@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26\fsmilli13333 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Section 5, Storage and Data Management, Section Introduction, Interactive Study Guide: Storage and Data Management - Part 1, https://acloudguru.visme.co/view/90r00ro8-1058-studyguide-s05-storage-and-data-management-part-1\
+\
+Section 5, Storage and Data Management, Section Introduction, Interactive Study Guide: Storage and Data Management - Part 2, https://acloudguru.visme.co/view/dmym0yg1-1058-studyguide-s05-storage-and-data-management-part-2\
+\
+Section 5, Storage and Data Management, Reviewing S3 Storage Classes, S3 Storage Classes, https://aws.amazon.com/s3/storage-classes/\
+\
+Section 5, Storage and Data Management, Demo: Creating an S3 Bucket, Amazon S3 Storage Classes, https://aws.amazon.com/s3/storage-classes/\
+\
+Section 5, Storage and Data Management, Demo: Creating an S3 Bucket, How can I add bucket-owner-full-control ACL to my objects in Amazon S3?, https://aws.amazon.com/premiumsupport/knowledge-center/s3-bucket-owner-full-control-acl/\
+\
+Section 5, Storage and Data Management, Working with S3 Lifecycle Policies, Transitioning objects using Amazon S3 Lifecycle, https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-transition-general-considerations.html\
+\
+Section 5, Storage and Data Management, Protecting Data from Accidental Deletion with MFA Delete, Configuring MFA Delete, https://docs.aws.amazon.com/AmazonS3/latest/userguide/MultiFactorAuthenticationDelete.html\
+\
+Section 5, Storage and Data Management, Protecting Data from Accidental Deletion with MFA Delete, Enabling a Virtual Multi-Factor Authentication (MFA) Device, https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html\
+\
+Section 5, Storage and Data Management, Demo: Working with EFS, Configuration options when creating a file system, https://docs.aws.amazon.com/efs/latest/ug/creating-using-create-fs.html#creating-using-create-fs-part1\
+\
+Section 5, Storage and Data Management, Demo: Working with EFS, Encryption In Transit, https://docs.aws.amazon.com/efs/latest/ug/encryption-in-transit.html\
+\
+Section 5, Storage and Data Management, Demo: Working with EFS, Installing the Amazon EFS Client, https://docs.aws.amazon.com/efs/latest/ug/installing-amazon-efs-utils.html\
+\
+Section 5, Storage and Data Management, Demo: Working with EFS, Mounting EFS File Systems, https://docs.aws.amazon.com/efs/latest/ug/mounting-fs.html\
+\
+Section 5, Storage and Data Management, Advanced EFS, Amazon EFS Performance, https://docs.aws.amazon.com/efs/latest/ug/performance.html\
+\
+Section 5, Storage and Data Management, Demo: Working with Athena, Lesson Resources, https://github.com/ACloudGuru-Resources/course-aws-sysops-administrator-associate/tree/main/Working_With_Athena_Demo\
+\
+Section 5, Storage and Data Management, Introducing Amazon OpenSearch Service (Formerly Amazon Elasticsearch Service), Introducing Amazon OpenSearch, https://aws.amazon.com/blogs/opensource/introducing-opensearch/\
+\
+Section 5, Storage and Data Management, OpenSearch Deployment Best Practices, Amazon OpenSearch (successor to Amazon Elasticsearch Service) Service FAQs, https://aws.amazon.com/opensearch-service/faqs/\
+\
+Section 5, Storage and Data Management, OpenSearch Deployment Best Practices, Introducing OpenSearch, https://aws.amazon.com/blogs/opensource/introducing-opensearch/\
+\
+Section 5, Storage and Data Management, OpenSearch Deployment Best Practices, OpenSearch Best Practices, https://docs.aws.amazon.com/opensearch-service/latest/developerguide/bp.html\
+\
+Section 5, Storage and Data Management, Demo: Configuring Static Website Hosting Using S3, index.html, https://github.com/ACloudGuru-Resources/course-aws-sysops-administrator-associate/tree/main/S3_Static_Website_Demo\
+\
+Section 5, Storage and Data Management, Demo: Leveraging Presigned URLs with S3, PreSigned URLs, https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html\
+\
+Section 5, Storage and Data Management, Demo: Using S3 Inventory, Sample S3 Inventory Report, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1671096928616-f70a3a28-6730-4c55-b922-477d3a7b5b1d.csv\
+\
+Section 5, Storage and Data Management, Introducing AWS Backup, AWS Backup FAQs, https://aws.amazon.com/backup/faqs/\
+\
+Section 5, Storage and Data Management, Section Review: Storage and Data Management Summary - Part 1, Interactive Study Guide: Storage and Data Management - Part 1, https://acloudguru.visme.co/view/90r00ro8-1058-studyguide-s05-storage-and-data-management-part-1\
+\
+Section 5, Storage and Data Management, Section Review: Storage and Data Management Summary - Part 2, Interactive Study Guide: Storage and Data Management - Part 2, https://acloudguru.visme.co/view/dmym0yg1-1058-studyguide-s05-storage-and-data-management-part-2\
+\
+}

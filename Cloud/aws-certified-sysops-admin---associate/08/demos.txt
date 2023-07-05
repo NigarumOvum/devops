@@ -1,0 +1,18 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26\fsmilli13333 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Section 9, Cost and Performance Optimization, Section Introduction, Interactive Study Guide: Cost and Performance Optimization Summary, https://acloudguru.visme.co/view/8r0kqmpm-1058-studyguides09-cost-and-performance-optimization\
+\
+Section 9, Cost and Performance Optimization, Using Placement Groups to Increase TCP/IP Traffic Flow, AWS EC2 Placement Groups Documentation, https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html\
+\
+Section 9, Cost and Performance Optimization, Demo: Performance Analysis Using RDS Performance Insights, Cloud Users SQL, https://github.com/ACloudGuru-Resources/course-aws-sysops-administrator-associate/blob/main/RDS_Insights_Demo/cloud_users.sql\
+\
+Section 9, Cost and Performance Optimization, Demo: Performance Analysis Using RDS Performance Insights, pgAdmin, https://www.pgadmin.org/download/\
+\
+Section 9, Cost and Performance Optimization, Section Review: Cost and Performance Optimization Summary, Interactive Study Guide: Cost and Performance Optimization Summary, https://acloudguru.visme.co/view/8r0kqmpm-1058-studyguides09-cost-and-performance-optimization}
